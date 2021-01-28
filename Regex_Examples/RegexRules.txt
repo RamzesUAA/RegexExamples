@@ -1,0 +1,28 @@
+﻿1) [a-z] - any one character from a through z, inclusive
+2) + - means “one or more”
+3) abc - exactly this sequence of three letter
+4) [abc] - any one of the letters a, b, or c
+5) [^abc] - any character except one of the letters a, b, or c
+	(immediately within an  open bracket, ^ mean "not," but anywhere
+	else it just means the character ^)
+6) [a-zA-Z0-9] - any one letter or digit
+7) [a-z]+  - will match a sequence of one or more lowercase letters
+8) [A-Za-z]+[0-9]  - will match one or more letters immediately followed by one digit
+9) abc|xyz - will match either abc or xyz
+10) X? - optional, X occurs once or not at all
+11) X* - X occurs zero or more times
+12) X+ - X occurs one or more times
+13) X{n} - X occurs exactly n times
+14) X{n,} - X occurs n or more times
+15) X{n,m} - X occurs at least n but not more than m times
+16) . - any one character except a line terminator
+17) \d - a digit: [0-9]
+18) \D - a non-digit: [^0-9]
+19) \s - a whitespace character: [  \t\n\x0B\f\r]
+20) \S - a non-whitespace character: [^\s]
+21) \w - a word character: [a-zA-Z_0-9]
+22) \W - a non-word character: [^\w]
+23) ^ - the beginning of a line
+24) $ - the end of a line
+25) \b - a word boundary
+27) \B - not a word boundary
